@@ -1,0 +1,39 @@
+App BLX
+App para anúncios e vendas de produtos na vizinhança (no seu bairro)
+
+*Funcionalidades:
+-Qualquer pessoa poderá anunciar produtos
+-Qualquer pessoa poderá fazer pedidos dos produtos anunciados
+
+-Uma pessoa tem:
+    -nome
+    -telefone
+
+-Um produto tem:
+    -nome
+    -detalhe
+    -preço
+    -disponivel (sim/nao)
+    -fotos(?)
+
+-Um pedido tem:
+    -produto
+    -pessoa
+    -quantidade
+    -local de entrega ou retirada
+    -observações (sabor, horário de entrega, troco, etc)
+
+-Cada usuário terá uma lista de pedidos recebidos e pedidos feitos
+
+-O pedido deverá ser aceito pelo vendedor
+
+-O comprador poderá acompanhar o seus pedidos:
+    -status (feito, aceito)
+
+Arquitetura e Ferramentas
+    -Python + FastAPI (pydantic) 
+    -Será um API REST
+    -Banco de Dados: Postgres e/ou MongoDB  (firebase firestore)
+    -Docker para Postgres
+    -MVC
+    -DDD (Domain Driven Design) e Arquietura limpa (clean architecture)
